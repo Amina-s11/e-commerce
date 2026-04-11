@@ -36,7 +36,7 @@
         width: 220px;
     }
     .item-price-old{
-        font-size: 40px;
+        font-size: 14px;
     }
 }
 @media(max-width:1024px){
