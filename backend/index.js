@@ -42,6 +42,8 @@ app.post("/upload",upload.single('product'),(req,res)=>{
     })
 })
 
+
+
 // Schema for creating Products
 
 const Product = mongoose.model("product",{
@@ -117,8 +119,8 @@ app.post('/removeproduct',async (req,res)=>{
     res.json({
         success:true,
         name:req.body.name
-    })
-})
+    });
+});
 
 // Creating API for getting all products
 app.get('/allproducts',async (req,res)=>{
