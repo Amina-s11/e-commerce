@@ -7,8 +7,27 @@
     margin-bottom: 1px;
     background: white;
 }
-.nav-logo{
-    width: 200px;
+.navlogo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navlogo img{
+    width: 50px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.text h1{
+    font-size: 22px;
+    margin: 0;
+    font-weight: 600;
+}
+.text p{
+    font-size: 13px;
+    margin: 0;
+    color: rgb(199, 18, 18);
 }
 .nav-profile{
     width: 75px;
@@ -17,8 +36,8 @@
     .navbar{
         padding: 15px 30px;
     }
-    .nav-logo{
-        width: 150px;
+    .navlogo{
+        width: 30px;
     }
     .nav-profile{
         width: 60px;
