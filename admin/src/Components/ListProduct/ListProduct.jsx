@@ -42,21 +42,44 @@ const ListProduct = () => {
       <div className="listproduct-allproducts">
         <hr />
         {allproducts.map((product,index)=>{
-          return <><div key={index} className="listproduct-format-main listproduct-format">
-            <img src={product.image} alt="" className="listproduct-product-icon" />
-            <p>{product.name}</p>
-            <p>${product.old_price}</p>
-            <p>${product.new_price}</p>
-            <p>{product.category}</p>
-            <img onClick={()=>{remove_product(product.id)}} className='listproduct-remove-icon' src={cross_icon} alt="" />
-          </div>
-          <hr />
-          </>
-        })}
+  return (
+    <React.Fragment key={product.id}>
+
+      <div className="listproduct-format-main listproduct-format">
+
+        <img
+          src={product.image}
+          alt=""
+          className="listproduct-product-icon"
+        />
+
+        <p>{product.name}</p>
+
+        <p>₹{product.old_price}</p>
+
+        <p>₹{product.new_price}</p>
+
+        <p>{product.category}</p>
+
+        <img
+          onClick={()=>{remove_product(product.id)}}
+          className='listproduct-remove-icon'
+          src={cross_icon}
+          alt=""
+        />
+
       </div>
-    </div>
+
+      <hr />
+
+    </React.Fragment>
+  )
+})}
+</div>
+</div>
   )
 }
+
 
 export default ListProduct
 
